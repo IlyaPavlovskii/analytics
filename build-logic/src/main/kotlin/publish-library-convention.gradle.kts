@@ -24,7 +24,7 @@ fun readGithubProperties(): Properties {
 publishing {
     repositories {
         maven {
-            url = uri("https://maven.pkg.github.com/IlyaPavlovskii/koin-v3-utils")
+            url = uri("https://maven.pkg.github.com/IlyaPavlovskii/analytics")
             val githubProperties: Properties = readGithubProperties()
             credentials {
                 username = githubProperties.getProperty("github_username")
@@ -42,15 +42,16 @@ mavenPublishing {
     )
 
     pom {
-        name.set("ipavlovskii-koin-v3-utils")
-        description.set("Simple Koin component library that helps to encapsulate module implementation inside the feature module.")
+        name.set("ipavlovskii-analytics")
+        description.set("The Kotlin Multiplatform Analytics Library is a powerful and versatile tool designed to streamline \n" +
+            "the process of collecting and analyzing app data in cross-platform projects. ")
         inceptionYear.set("2023")
-        url.set("https://github.com/IlyaPavlovskii/koin-v3-utils")
+        url.set("https://github.com/IlyaPavlovskii/analytics")
         licenses {
             license {
                 name.set("Apache 2.0 License")
-                url.set("https://github.com/IlyaPavlovskii/koin-v3-utils/blob/master/LICENSE.md")
-                distribution.set("https://github.com/IlyaPavlovskii/koin-v3-utils/blob/master/LICENSE.md")
+                url.set("https://github.com/IlyaPavlovskii/analytics/blob/master/LICENSE.md")
+                distribution.set("https://github.com/IlyaPavlovskii/analytics/blob/master/LICENSE.md")
             }
         }
         developers {
@@ -61,9 +62,9 @@ mavenPublishing {
             }
         }
         scm {
-            url.set("https://github.com/IlyaPavlovskii/koin-v3-utils")
-            connection.set("scm:git:github.com/IlyaPavlovskii/koin-v3-utils.git")
-            developerConnection.set("scm:git:ssh://github.com/IlyaPavlovskii/koin-v3-utils.git")
+            url.set("https://github.com/IlyaPavlovskii/analytics")
+            connection.set("scm:git:github.com/IlyaPavlovskii/analytics.git")
+            developerConnection.set("scm:git:ssh://github.com/IlyaPavlovskii/analytics.git")
         }
     }
 }
