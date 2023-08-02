@@ -64,3 +64,24 @@ implementation libs.io.github.ilyapavlovskii.kmm.analytics
 
 # How to use
 
+Initialize your analytics tracker and put `simple` or `withParams` events:
+```kotlin
+private val tracker: AnalyticsTracker = AggregateAnalyticsTracker(
+    LoggerAnalyticsTracker,
+    FirebaseAnalyticsTracker(logger = FirebaseAnalyticsLogger.getInstance(androidContext())) 
+)
+tracker.trackEvent(AnalyticsEvent.Simple("SimpleEvent"))
+tracker.trackEvent(AnalyticsEvent.WithParams("EventWithParams", mapOf("param1" to "value1")))
+```
+
+Firebase Analytics Tracker supports the next types as a payload events:
+```kotlin
+Byte,
+Short,
+Int,
+Long,
+Float,
+Double,
+String
+```
+Another types will automatically be converted to `String` type.
