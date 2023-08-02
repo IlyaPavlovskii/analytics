@@ -23,7 +23,7 @@ subprojects {
         mavenLocal()
     }
     group = "io.github.ilyapavlovskii.kmm.analytics"
-    version = "2023.08.02"
+    version = "2023.08.03"
 
     setupJavaTarget(this)
 }
