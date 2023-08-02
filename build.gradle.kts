@@ -22,8 +22,8 @@ subprojects {
         mavenCentral()
         mavenLocal()
     }
-    group = "io.github.ilyapavlovskii.kmm.koin"
-    version = "2023.02.13"
+    group = "io.github.ilyapavlovskii.kmm.analytics"
+    version = "2023.08.02"
 
     setupJavaTarget(this)
 }

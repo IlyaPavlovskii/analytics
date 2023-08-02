@@ -11,4 +11,3 @@ dependencyResolutionManagement {
 //rootProject.name = "KoinUtils"
 includeBuild("build-logic")
 include(":analytics")
-//include(":koin-utils")

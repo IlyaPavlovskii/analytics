@@ -2,11 +2,15 @@
 # kotlin
 kotlinVersion = "1.8.0"
 # kotlinx
-koin = "3.2.0"
-androidGradlePluginVersion = "7.4.0"
+koin = "3.4.1"
+androidGradlePluginVersion = "7.4.2"
 
 [libraries]
 #===========MULTIPLATFORM===========#
+com-touchlane-gridpad = "com.touchlane:gridpad:1.1.2"
+firebase-bom = { module = "com.google.firebase:firebase-bom", version = "32.2.0" }
+firebase-analytics-ktx = { module = "com.google.firebase:firebase-analytics-ktx" }
+
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
 
 #===========GRADLE PLUGINS ARTIFACTS===========#
