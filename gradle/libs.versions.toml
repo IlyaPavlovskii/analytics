@@ -1,0 +1,14 @@
+[versions]
+# kotlin
+kotlinVersion = "1.8.0"
+# kotlinx
+koin = "3.2.0"
+androidGradlePluginVersion = "7.4.0"
+
+[libraries]
+#===========MULTIPLATFORM===========#
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+
+#===========GRADLE PLUGINS ARTIFACTS===========#
+plugin-kotlin-gradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinVersion" }
+plugin-android-gradle = { module = "com.android.tools.build:gradle", version.ref = "androidGradlePluginVersion" }
