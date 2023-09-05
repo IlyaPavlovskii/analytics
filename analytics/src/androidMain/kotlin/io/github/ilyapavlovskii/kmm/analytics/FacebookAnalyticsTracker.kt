@@ -1,14 +1,13 @@
 package io.github.ilyapavlovskii.kmm.analytics
 
-import com.google.firebase.analytics.FirebaseAnalytics
+import com.facebook.appevents.AppEventsLogger
 
-class FirebaseAnalyticsTracker(
-    private val logger: FirebaseAnalytics,
+class FacebookAnalyticsTracker(
+    private val logger: AppEventsLogger
 ) : AnalyticsTracker {
-
     override fun trackEvent(event: AnalyticsEvent) {
-        return when (event) {
-            is AnalyticsEvent.Simple -> logger.logEvent(event.action, null)
+        when (event) {
+            is AnalyticsEvent.Simple -> logger.logEvent(event.action)
             is AnalyticsEvent.WithPayload -> logger.logEvent(
                 event.action,
                 payloadToBundle(event.payload)
