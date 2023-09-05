@@ -103,10 +103,24 @@ your `AndroidManifest.xml` file:
 
 ```xml
 
-<application android:label="@string/app_name" ...>...<meta-data
-android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" /><meta-data
-android:name="com.facebook.sdk.ClientToken"
-android:value="@string/facebook_client_token" />...</application>
+<application android:label="@string/app_name" 
+    ...
+    >
+    ...
+
+    <meta-data
+        android:name="com.facebook.sdk.ApplicationId" 
+        android:value="@string/facebook_app_id" 
+        />
+    
+    <meta-data
+        android:name="com.facebook.sdk.ClientToken"
+        android:value="@string/facebook_client_token" 
+        />
+    
+    ...
+
+</application>
 ```
 
 Initialize facebook api keys
